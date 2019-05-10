@@ -2,6 +2,10 @@ package com.company.intefrace;
 
 import java.util.Arrays;
 
+/**
+ * @Author Eckel
+ * page #270
+ */
 class Processor {
     public String name() {
         return getClass().getSimpleName();

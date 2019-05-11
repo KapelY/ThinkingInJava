@@ -105,6 +105,7 @@ public class Nesting {
         a2.receiveD(a.getD());
 
         A.B ab = a.new BImpl();
+        A.B ab1 = new A().new BImpl();
         ab = a.new BImpl2();
         A.C ac = a.new CImpl();
         a.receiveD(a.getD());

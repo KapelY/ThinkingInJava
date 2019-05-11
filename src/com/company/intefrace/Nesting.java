@@ -44,15 +44,15 @@ class A {
     public class DImpl2 implements D {
         @Override
         public void f() {
+            System.out.print("DImpl2");
+            System.out.println(this);
         }
     }
 
     public D getD() {
         return new DImpl2();
     }
-
     private D dRef;
-
     public void receiveD(D d) {
         dRef = d;
         dRef.f();
@@ -103,5 +103,10 @@ public class Nesting {
 //        a.getD().f();
         A a2 = new A();
         a2.receiveD(a.getD());
+
+        A.B ab = a.new BImpl();
+        ab = a.new BImpl2();
+        A.C ac = a.new CImpl();
+        a.receiveD(a.getD());
     }
 }

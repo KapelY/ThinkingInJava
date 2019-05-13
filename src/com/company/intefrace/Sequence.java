@@ -2,7 +2,7 @@ package com.company.intefrace;
 
 /**
  * @Author Eckel
- * page #290
+ * page #291
  */
 interface Selector {
     boolean end();

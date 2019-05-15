@@ -1,8 +1,5 @@
 package com.company.intefrace;
 
-import org.jetbrains.annotations.Contract;
-import sun.security.krb5.internal.crypto.Des;
-
 public class Parcel11 {
     private static class ParcelContents implements Contents {
         private int i;

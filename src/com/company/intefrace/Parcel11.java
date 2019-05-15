@@ -1,5 +1,6 @@
 package com.company.intefrace;
 
+import org.jetbrains.annotations.Contract;
 import sun.security.krb5.internal.crypto.Des;
 
 public class Parcel11 {
@@ -31,13 +32,15 @@ public class Parcel11 {
         }
 
         public static class AnotherLevelClass {
-             public static void f() {
+            public static void f() {
                 System.out.println("in f() static AnotherLevelClass = " + f);
             }
         }
+
         public static Destination destination(String dest) {
             return new ParcelDestination(dest);
         }
+
         public static Contents contents() {
             return new ParcelContents();
         }

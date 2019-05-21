@@ -1,5 +1,9 @@
 package com.company.intefrace;
 
+/**
+ * @Author Eckel
+ * page #304
+ */
 public class Parcel11 {
     private static class ParcelContents implements Contents {
         private int i;

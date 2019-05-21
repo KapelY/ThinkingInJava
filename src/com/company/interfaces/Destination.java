@@ -1,4 +1,4 @@
-package com.company.intefrace;
+package com.company.interfaces;
 
 public interface Destination {
     String readLabel();

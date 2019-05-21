@@ -1,4 +1,4 @@
-package com.company.intefrace;
+package com.company.interfaces;
 
 /**
  * @Author Eckel

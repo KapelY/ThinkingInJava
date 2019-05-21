@@ -1,4 +1,4 @@
-package com.company.intefrace;
+package com.company.interfaces;
 
 import java.util.Arrays;
 

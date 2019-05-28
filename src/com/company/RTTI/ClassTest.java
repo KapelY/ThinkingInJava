@@ -35,7 +35,7 @@ public class ClassTest {
         System.out.println("Simple name: " + cc.getSimpleName());
         System.out.println("Canonical name: " + cc.getCanonicalName());
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException, InstantiationException {
         Class c = null;
         try {
             c = Class.forName("com.company.RTTI.FancyToy");
@@ -45,7 +45,7 @@ public class ClassTest {
         }
         printClassInfo(c);
         for (Class face: c.getInterfaces()) {
-            System.out.println(face);
+            printClassInfo(face);
         }
         Class up = c.getSuperclass();
         Object obj = null;
@@ -55,5 +55,12 @@ public class ClassTest {
             e.printStackTrace();
         }
         printClassInfo(Objects.requireNonNull(obj).getClass());
+
+        Class<FancyToy>  fancyToyClass = FancyToy.class;
+        FancyToy fancyToy = fancyToyClass.newInstance();
+        Class<? super FancyToy> up1 = fancyToyClass.getSuperclass();
+//        Class<Toy> up2 = fancyToyClass.getSuperclass();
+//        Class<Toy> upTest = up1.newInstance();
+        Object obj1 = up1.newInstance();
     }
 }

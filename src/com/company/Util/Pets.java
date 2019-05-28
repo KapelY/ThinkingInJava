@@ -3,7 +3,7 @@ package com.company.Util;
 import java.util.ArrayList;
 
 /**
- * page #471
+ * page #471, 472
  */
 public class Pets {
     public static final PetCreator creator =
@@ -16,5 +16,9 @@ public class Pets {
     }
     public static ArrayList<Pet> arrayList(int size) {
         return creator.arrayList(size);
+    }
+
+    public static void main(String[] args) {
+        PetCount.countPets(Pets.creator);
     }
 }

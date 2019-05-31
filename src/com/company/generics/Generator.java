@@ -1,4 +1,4 @@
-package com.company.Containers;
+package com.company.generics;
 
 /**
  * page 510

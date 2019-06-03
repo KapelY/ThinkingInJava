@@ -3,7 +3,7 @@ package com.company.generics;
 /**
  * page 511
  */
-public class Fibonacci {
+public class Fibonacci implements Generator<Integer> {
     private int count = 0;
 
     public Integer next() {

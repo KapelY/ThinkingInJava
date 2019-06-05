@@ -1,5 +1,5 @@
 //: net/mindview/util/CollectionData.java
-// A Collection filled with data using a generator object.
+// A Collection filled with data using a generator object. 639
 package com.company.net.mindview.util;
 
 import java.util.ArrayList;
@@ -10,8 +10,7 @@ public class CollectionData<T> extends ArrayList<T> {
       add(gen.next());
   }
   // A generic convenience method:
-  public static <T> CollectionData<T>
-  list(Generator<T> gen, int quantity) {
-    return new CollectionData<T>(gen, quantity);
+  public static <T> CollectionData<T> list(Generator<T> gen, int quantity) {
+    return new CollectionData<>(gen, quantity);
   }
 } ///:~

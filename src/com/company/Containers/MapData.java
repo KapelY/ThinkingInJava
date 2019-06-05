@@ -1,6 +1,6 @@
 package com.company.Containers;
 
-import com.company.generics.Generator;
+import com.company.net.mindview.util.Generator;
 
 import java.util.LinkedHashMap;
 

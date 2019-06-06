@@ -1,6 +1,6 @@
 //: net/mindview/util/Deque.java
-// Creating a Deque from a LinkedList.
-package com.company.net.mindview.util;
+// Creating a Deque from a LinkedList. 667
+package com.company.Containers;
 
 import java.util.LinkedList;
 

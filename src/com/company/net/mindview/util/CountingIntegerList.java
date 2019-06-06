@@ -12,7 +12,7 @@ public class CountingIntegerList extends AbstractList<Integer> {
     }
 
     public Integer get(int index) {
-        return Integer.valueOf(index);
+        return index;
     }
 
     public int size() {

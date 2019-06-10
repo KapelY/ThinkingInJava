@@ -2,6 +2,9 @@ package com.company.Util;
 
 import org.jetbrains.annotations.NotNull;
 
+/**
+ * 687
+ */
 public class Individual implements Comparable<Individual> {
     private static long counter = 0;
     private final long id = counter++;

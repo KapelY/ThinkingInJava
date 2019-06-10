@@ -1,7 +1,7 @@
 //: net/mindview/util/Directory.java
 // Produce a sequence of File objects that match a
 // regular expression in either a local directory,
-// or by walking a directory tree.
+// or by walking a directory tree. 728
 package com.company.net.mindview.util;
 
 import java.io.File;
@@ -22,8 +22,7 @@ public final class Directory {
       }
     });
   }
-  public static File[]
-  local(String path, final String regex) { // Overloaded
+  public static File[] local(String path, final String regex) { // Overloaded
     return local(new File(path), regex);
   }
   // A two-tuple for returning a pair of objects:

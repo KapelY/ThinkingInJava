@@ -5,4 +5,5 @@
 *.out
 *.dat
 *.gz
+*.zip
 *.tmp

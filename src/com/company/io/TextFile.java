@@ -15,6 +15,7 @@ public class TextFile extends ArrayList<String> {
         StringBuffer sb = new StringBuffer();
         try (BufferedReader in = new BufferedReader(new FileReader(
                 new File(valueOf(fileName)).getAbsoluteFile()));) {
+            System.out.println(new File(valueOf(fileName)).getAbsoluteFile());
             String s;
             while ((s = in.readLine()) != null) {
                 sb.append(s);

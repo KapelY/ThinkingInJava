@@ -1,5 +1,5 @@
-//: net/mindview/util/Enums.java
-package com.company.net.mindview.util;
+//: net/mindview/util/Enums.java 819
+package com.company.enumerater;
 
 import java.util.Random;
 

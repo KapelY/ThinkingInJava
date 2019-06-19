@@ -2,7 +2,6 @@ package com.company.concurrency.ex;
 
 // Exercise 21, page 962
 
-
 import java.util.concurrent.*;
 
 class A implements Runnable {
